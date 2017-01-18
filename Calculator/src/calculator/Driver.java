@@ -9,13 +9,12 @@ package calculator;
  *
  * @author Colin
  */
-public class Calculator {
-    
-    private final CalculatorGUI gui = new CalculatorGUI();
-    
-    
-    public void runGUI(){
-        gui.init();
+public class Driver {
+     /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        calc.runGUI();
     }
-    
 }
