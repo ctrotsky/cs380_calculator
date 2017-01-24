@@ -22,6 +22,7 @@ public class CalculatorGUI extends JFrame implements ActionListener {
     private JButton[] button_numbers; 
     
     private JLabel label_display;
+    private JButton button_clear;
     
     public void init(){
         getContentPane().setLayout(null);
@@ -58,6 +59,8 @@ public class CalculatorGUI extends JFrame implements ActionListener {
         label_display.setBounds(5,5,150,50);
         label_display.setBackground(Color.WHITE);
         panel_display.add(label_display);
+        
+        button_clear = new JButton("Clear");
         
         System.out.println("Calculator GUI initialized");
     }
